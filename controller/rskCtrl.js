@@ -61,7 +61,7 @@ class RskCtrl {
         console.log("Trying to send " + amount + " to: " + to);
 
         let transferValueSatoshi = Number(amount) - conf.commission; //subtract base fee
-        transferValueSatoshi -= (transferValueSatoshi / 1000 * 2); //subtract commission
+        transferValueSatoshi -= (transferValueSatoshi / 1000 * 7.5); //subtract commission
 
         transferValueSatoshi = Number(Math.max(transferValueSatoshi, 0).toFixed(0));
 
